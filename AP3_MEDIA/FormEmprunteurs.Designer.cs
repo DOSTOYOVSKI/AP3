@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -41,16 +43,28 @@
             label1.TabIndex = 4;
             label1.Text = "Liste des emprunteurs";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(43, 70);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(593, 150);
+            dataGridView1.TabIndex = 5;
+            // 
             // FormEmprunteurs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             ClientSize = new Size(784, 298);
+            Controls.Add(dataGridView1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormEmprunteurs";
             Text = "FormEmprunteurs";
+            Load += FormEmprunteurs_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -58,5 +72,6 @@
         #endregion
 
         private Label label1;
+        private DataGridView dataGridView1;
     }
 }

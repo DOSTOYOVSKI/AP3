@@ -16,5 +16,10 @@ namespace AP3_MEDIA
         {
             InitializeComponent();
         }
+
+        private void FormEmprunteurs_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
